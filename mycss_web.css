@@ -2,14 +2,6 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial;
-    padding: 10px;
-    background-attachment: fixed;
-    background-size: 100%;
-
-}
-
 h4{
 
     padding-left: 50px;
@@ -45,12 +37,20 @@ h2, h3 {
  text-align: center;
 }
 
+a{
+    color: #001d60
+}
 
+a:visited{
+    
+    color: #001d60;
+}
 
 a:hover{
     text-decoration: none;
-    color: #007ad9;
+    color: #049fff;
 }
+
 
 /* Navbar container */
 .navbar {
@@ -109,6 +109,7 @@ a:hover{
   z-index: 1;
 
 }
+
 
 /* Links inside the dropdown */
 .dropdown-content a {
@@ -299,6 +300,8 @@ img {
         width: 100%;
     }
 }
+
+/* Controll how the menu opens and closes */
 .animate-reveal {
   font: bold 1.5em sans-serif;
   text-transform: uppercase;
@@ -366,3 +369,10 @@ img {
   }
 }
 
+
+/* for media type print*/
+@media print{
+    .screen_only{
+        display: none;
+    }
+}
