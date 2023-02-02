@@ -17,17 +17,18 @@ body {
     padding: 10px;
     background-attachment: fixed;
     background-size: 100%;
+
 }
 
 h4{
 
-	padding-left: 50px;
+  padding-left: 50px;
 }
 
-img{
-	border-radius: 50%;
-	width: 150px;
-	height: 150px;
+.header img{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
 }
 
 /* Header/Blog Title */
@@ -50,13 +51,15 @@ img{
 
 }
 
-
+h2, h3 {
+ text-align: center;
+}
 
 
 
 a:hover{
-	text-decoration: none;
-	color: #007ad9;
+  text-decoration: none;
+  color: #007ad9;
 }
 
 /* Navbar container */
@@ -202,7 +205,7 @@ canvas{
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {   
-    float: left;
+    float: center;
     width: 75%;
 
 }
@@ -228,13 +231,36 @@ canvas{
     padding: 20px;
     margin-top: 20px;
     color: #001d60;
+    font-size: 20px;
 }
 .card2 {
     
     padding: 20px;
     margin-top: 20px;
    color: #001d60;
-    background-position: left bottom;
+    background-position: center;
+    align-items: center;
+}
+
+.card2 img{
+    width: 400px;
+    height: auto;
+    padding: 10px;
+}
+
+.parent {
+  text-align: center;
+}
+.parent > ul {
+  display: inline-block;
+}
+
+.parent > ol {
+  display: inline-block;
+}
+
+li {
+  padding-left: 40px;
 }
 
 .img{
@@ -242,16 +268,6 @@ canvas{
     height: 80%;
 }
 
-
-.basics {
-
-	padding: 20px;
-    margin-top: 20px;
-	text-align: center;
-	background-position: center;
-	color: #001d60;
-	font-size: 25px;
-}
 
 .card {
     
@@ -272,11 +288,8 @@ canvas{
         text-align: center;
     margin-top: 20px;
     font-family: "Alegreya Sans SC", sans-serif; 
-}
+  }
 
-/*
-.lambo {height: 540px; width: 960px;}
-*/
 
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -368,8 +381,10 @@ img {
 </head>
 <body>
 
-<span class="menu" style="font-size:20px;cursor:pointer;font-family: Trebuchet MS;" onclick="openNav()"><br> &nbsp; menu &nbsp;<br><br></span>
+
 <!-- HTML for NAV BAR -->
+<span class="menu" style="font-size:20px;cursor:pointer;font-family: Trebuchet MS;" onclick="openNav()"><br> &nbsp; MENU &nbsp;<br><br></span>
+
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
@@ -395,122 +410,121 @@ img {
 
     </div>
   </div> 
-  </div> 
- 
-
- 
+</div> 
 </div>
 </div>
 </span>
-  </div>
+</div>
 </div>
 
-<!-- end of nav bar -->
+  <!-- end of nav bar -->
 
-
-
-
-
-
+  <!-- Header -->
 <div class="header">
   <center>
-  	<p><img src="Memoji.png" alt="Avatar"></p>
+    <p><img src="Memoji.png" alt="Avatar"></p>
    <p style="font-size: 35px"> Sierra Clarke <br> <span style="font-size: 20px">Senior in Computer Science</span></p>
 </center>
 </div>
+  <!-- End of Header -->
 
 
-  <span style="font-family:Alegreya Sans SC;">
-  
-
-
-
-<div class="header" style="height: 50px; margin-left: -30px; margin-right: -30px;">
-  </div>
-
-
-<div class="row">
-
-
-  <div class="leftcolumn">
-
-
+  <span style="font-family:Alegreya Sans SC; position: center;">
+    <div class="row">
+    <div class=" s">
 
     <div class="card1">
-
-
-      
     <div class="card2">
-   	<h2 id="education"> Education </h3>
-     <p> Attended George Westinghouse CTE High School and studied computer science & information technology partnering with the Brooklyn Steam Center. <br><br> Currently attending St. John's University as a senior for my Bachelor's Degree in computer science. </p>
- 	</div>
+    <h2 id="education"> Education </h3>
+     <p  style="text-align: center;"> Attended George Westinghouse CTE High School and studied computer science & information technology partnering with the Brooklyn Steam Center. Linked here is a video game I made while at the STEAM Center called <a href="https://scratch.mit.edu/projects/251874104/">
+      Vanessa's Food Journey. </a><br>
+
+      <br><br> Currently attending St. John's University as a senior for my Bachelor's Degree in computer science. I plan on graduating in May.</p>
+  </div>
 
      <div class="card2">
+
      <h2 id="experience"> Experience </h3>
      <p>
-     	<ul>
-     		<li> Student worker in IT at the Brooklyn Steam Center (2017-2019) <p></p></li>
+      <div class="parent">
+      <ul>
+        <li> Student worker in IT at the Brooklyn Steam Center (2017-2019) <p></p></li>
 
-     		 <li> Student worker in IT for St. John's University (2021-2022) <p></p></li>
+         <li> Student worker in IT for St. John's University (2021-2022) <p></p></li>
 
-     		 <li> IT Systems Specialist for St. John's University (2022-Now) <p></p></li>
-     	</ul> 
-
+         <li> IT Systems Specialist for St. John's University (2022-Now) <p></p></li>
+      </ul> 
+     </div>
 
      </p>
-	 </div>
+   </div>
 
      <div class="card2">
      <h2 id="skills"> Programming Skills </h3>
      
-     	<ol>
-     		<li> Java - Most Experienced <p></p></li>
-     		<li> HTML/CSS - Adequately Experienced <p></p></li>
-     		<li> Python - Some Experience <p></p></li>
-     		<li> Swift - Little Experience <p></p></li>
-     	</ol>
-
-	 </div>
+      <div class="parent">
+      <ol>
+        <li> Java - Most Experienced <p></p></li>
+        <li> HTML/CSS - Adequately Experienced <p></p></li>
+        <li> Python - Some Experience <p></p></li>
+        <li> Swift - Little Experience <p></p></li>
+      </ol>
+     </div>
+   </div>
      
      
     
     <div class="card2">
       
-    	<h2 id="interests"> General Interests </h2>
-    		<p> I like to eat and sleep a lot. Sometimes I play games, and once in a while I practice playing piano. Below are some of my favorite things. <p style="color: white"> .  </p></p>
+      <h2 id="interests"> General Interests </h2>
 
-    		
-    			<p id="food"> <b>Favorite Food:</b> Curry Chicken </p>
+      <span style="text-align: center; ">
+        <p style="padding-left: 35px"> I like to eat and sleep a lot. Sometimes I play games, and once in a while I practice playing piano. Below are some of my favorite things. <p style="color: white"> .  </p></p>
 
-    			<p id="song"> <b>Favorite Song:</b> Lemonade by Tay-K </p>
+        
+          <p id="food"> <b>Favorite Foods:</b><br>
+             Curry Chicken Roti <br>
+             <img src="https://mybajan.com/wp-content/uploads/2020/04/Bajan-roti-chicken-678x381.jpg"> </p>
+            
+             <p>Oxtail <br>
+              <img src="https://preview.redd.it/kaghi6m35vt31.jpg?auto=webp&s=a89ef6cb8e9f7ee320c2232e12ed127dab2a95bc"> </p>
+            
+            <p> Poke Bowls <br>
+              <img src="pokebowl.png"> </p>
 
-    			<p id="film"> <b>Favorite Film:</b> Deadpool </p>
+           </p>
 
-    			<p id="show"> <b>Favorite TV Show:</b> Hunter x Hunter </p>
 
-    			<p id="website"> <b>Favorite Websites:</b> 
-    				<ul>
-    					<li>
-    						<a href="https://youtube.com" target="_blank"> Youtube </a> - A website to watch videos </p>
-    					</li>
+          <p id="song"> <b>Favorite Song:</b> DOLLAZ ON MY HEAD - Gunna </p>
 
-    					<li>
-    						<p> <a href="https://vimm.net/" target="_blank"> Vimm's Lair </a> - A website to get games </p>
-    					</li>
+          <p id="film"> <b>Favorite Movie:</b> Demon Slayer Mugen Train <br> Below is a trailer for the movie. </p> <p><iframe width="560" height="315" src="https://www.youtube.com/embed/ATJYac_dORw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
 
-    					<li>
-    						<p><a href="https://google.com" target="_blank"> Google </a> - Just about any question you can think of has been asked (and usually answered) on here</p>
-    					</li>
+          <p id="show"> <b>Favorite TV Show:</b> Hunter x Hunter <br>
+          Below is a recent promotional video for HxH.</p>
+          <p><iframe width="560" height="315" src="https://www.youtube.com/embed/bfv-VaaAlxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
 
-    			</ul>
+          <p id="website"> <b>Favorite Websites:</b> </span>
+
+              <div class="parent">
+                <ul>
+                  <li> <a href="https://youtube.com" target="_blank"> Youtube </a> - A website to watch videos <p></p></li>
+
+                  <li> <a href="https://vimm.net/" target="_blank"> Vimm's Lair </a> - A website to get console games <p></p></li>
+
+                  <li> <a href="https://google.com" target="_blank"> Google </a> - Just about any question you can think of has been asked (and usually answered) on here<p></p></li>
+                </ul> 
+              </div>
+            
  
- 	</div>
+  </div>
 
- 		<h2 id="projects"> My Projects </h2>
- 		<p> Below are the projects for my class.</p>
- 		<ol>
- 			<li><a href="#" style="color: #001d60">Project 1</a> </li>
- 		</ol>
+    <h2 id="projects"> My Projects </h2>
+    <p style="text-align: center; padding-left: 10px"> Below are the projects for my class.</p>
+    <div class="parent">
+     <ol>
+        <li><a href="#" style="color: #001d60">Project 1</a> </li>
+     </ol>
+    </div>
 
 
 
@@ -519,18 +533,6 @@ img {
   </div>
 </div>
 
-<!--
-  <div class="rightcolumn">
-    <div class="card3">
-      <h2><i>f</i></h2>  
-    </div>
-   
-    <div class="card">
-      <p style="text-align: center;">Amosc: </p>
-      <p style="text-align: center;">Instagram: </p>
-    </div>
-  </div>
--->
 
 </div>
 
