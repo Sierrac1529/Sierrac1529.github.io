@@ -1,4 +1,5 @@
 For Project 1: Start with index.html
+You can also go directly to sierrac1529.github.io to view
 
 Website will run index.html 
 Select wich Milestone to view.
