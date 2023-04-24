@@ -1,0 +1,13 @@
+const geoQuestions =[
+  {
+    questionType : "true_false",
+    questionText : "Paris is in Italy.",
+    correctAnswer : "false",
+    options : ["true", "false"],
+  },
+  {
+    questionType : "text_input",
+    questionText : "Is London located in England or Germany?",
+    correctAnswer : "England",
+    answerFieldId : "answer_to_question"
+  }]
