@@ -159,8 +159,7 @@
 						li.innerHTML = rewrite_html;
 						document.querySelector('#tasks_list').append(li);
 
-						//cross out text
-						element.parentElement.strike();
+						
 
 
 
