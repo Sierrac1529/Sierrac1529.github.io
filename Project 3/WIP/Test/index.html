@@ -11,8 +11,8 @@
     <!-- Include handlebars library -->
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 
-    <!-- Script for our application  -->
-    <link rel="stylesheet" href="spa_app.css">
+    <!-- Script for our application  
+    <link rel="stylesheet" href="spa_app.css">-->
     <script src="02_app_demo.js"> </script>
 
   </head>
@@ -25,12 +25,12 @@
 
     <div class="row">
     <div class="col p-3">
-      <p style="text-align: left; color: white;" id="total">Questions Answered: </p>
+      <h5 style="text-align: left; color: white;" id="total">Questions Answered: <span id="qa"> </span></h5>
       </div>
     <div class="col p-3"> </div>
     <div class="col p-3"> </div>
-    <div class="col p-3"><p style="text-align: left; color: white;" id="score">Score: </p>
-    <p style="text-align: left; color: white;" id="time">Time Elapsed: </p>
+    <div class="col p-3"><h5 style="text-align: left; color: white;" id="score">Score: <span id="tot"> 0</span>/20</h5>
+    <h6 style="text-align: left; color: white;" id="time">Time Elapsed: <span id="clock"> </span></h6>
     </div>
   </div>
     
@@ -71,8 +71,8 @@
 
                     <label for="quizType" style="font-size: 19px">Quiz Type:</label>
                     <select name="quizType" id="quizType">
-                      <option value="Math">Math</option>
-                      <option value="Geography">Geography</option>
+                      <option value="HTML">HTML</option>
+                      <option value="Java">Java</option>
                     </select>
                
                   </span>
@@ -123,6 +123,23 @@
       </div>
   </script>
 
+
+  <script id="question_view_mc" type="text/x-handlebars-template">
+    <div class="container">
+      <div class="row">
+          <div class="col">
+            <div>
+              <span style="text-align:center"> {{this.questionText}}</span>
+              <div>
+              <button class="btn btn-primary pull-left" data-action="answer" data-answer="{{this.options.[0]}}">{{this.options.[0]}}</button>
+              <button class="btn btn-warning float-none" data-action="answer" data-answer="{{this.options.[1]}}">{{this.options.[1]}}</button>
+              <button class="btn btn-danger float-right" data-action="answer" data-answer="{{this.options.[2]}}">{{this.options.[2]}}</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </script>
 
 
 
